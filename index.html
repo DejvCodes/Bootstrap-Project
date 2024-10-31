@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>WebDev</title>
+  </head>
+  <body>
+    <!-------------------- HEADER -------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom">
+            <div class="container">
+                <div class="navbar-brand d-flex align-items-center">
+                    <i class="bi bi-globe-europe-africa text-warning d-inline-block align-middle"></i>
+                    <span class="ms-1">WebDev</span>
+                </div>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse flex-grow-0 ps-1" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#vyzva" class="nav-link">Výzva</a></li>
+                        <li class="nav-item"><a href="#systemy" class="nav-link">Systémy</a></li>
+                        <li class="nav-item"><a href="#obrazky" class="nav-link">Obrázky</a></li>
+                        <li class="nav-item"><a href="#tarify" class="nav-link">Tarify</a></li>
+                        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                    </ul>
+                    <button class="btn btn-outline-primary ms-lg-3 btn-b">Přihlásit</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-------------------- MAIN -------------------->
+    <main style="padding-top: 3.5rem;">
+        <!-------------------- SECTION - VÝZVA -------------------->
+        <section id="vyzva" class="container-fluid py-5 bg-secondary text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1 class="display-4">Vítejte na našem webu!</h1>
+                        <p class="lead">Ač se jedná pouze o ukázkovou stránku, dozvíte se zde (především v kódu) mnoho zajimavýchinformací o tom, jak používat Bootstrap.</p>
+                        <hr class="my-4">
+                        <p>Pokud chcete být informováni o novinkách v oblasti webového vývoje, zaregistrujte se zde k odběru našeho newsletteru.</p>
+                        <form>
+                            <input type="text" class="form-control form-control-lg mb-3" placeholder="Zadejte svůj e-mail ...">
+                            <div class="d-flex justify-content-between mx-0 p-0"  style="height: 58px;">
+                                <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="collapse" href="#odberOk">Odebírat</button>
+                                <div id="odberOk" class="alert alert-success alert-dismissible collapse fade m-0" role="alert">
+                                    Odběr byl úspěšne přihlášen
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 text-end text-warning d-none d-lg-block" style="margin: -5rem 0;">
+                        <i class="bi-emoji-smile p-3" style="font-size: 20rem;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------- SECTION - SYSTÉMY -------------------->
+        <section id="systemy" class="container mt-5">
+            <div class="row text-center">
+                <div class="p-2 col-12 col-md-6 col-lg-4">
+                    <h5 class="display-5 m-0">Windows</h5>
+                    <i class="bi-windows fs-1" style="color: #03A5F0;"></i>
+                    <p class="lead">Naše weby jsou vždy plně kompatibilní se všemi prohlížeči, které lze nainstalovat na operační systém Windows.</p>
+                </div>
+                <div class="p-2 col-12 col-md-6 col-lg-4">
+                    <h5 class="display-5 m-0">Android</h5>
+                    <i class="bi-android fs-1" style="color: #A4C739;"></i>
+                    <p class="lead">Naše weby jsou vždy plně kompatibilní se všemi prohlížeči, které lze nainstalovat na operační systém Android.</p>
+                </div>
+                <div class="p-2 col-12 col-md-6 col-lg-4 mx-auto">
+                    <h5 class="display-5 m-0">Apple</h5>
+                    <i class="bi-apple   fs-1" style="color: #A6B1B7;"></i>
+                    <p class="lead">Naše weby jsou vždy plně kompatibilní se všemi prohlížeči, které lze nainstalovat na operační systém Apple.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------- SECTION - OBRÁZKY -------------------->
+        <section id="obrazky" class="obrazky container-fluid mt-5 px-0">
+            <!-- bs5-carousel-caption -->
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ul class="carousel-indicators" style="list-style: none;">
+                    <li 
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="1. slide"
+                    ></li>
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="1"
+                        aria-label="2. slide"
+                    ></li>
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="2"
+                        aria-label="3. slide"
+                    ></li>
+                </ul>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img
+                            src="https://picsum.photos/id/377/1920/800"
+                            class="w-100 d-block"
+                            alt="První slide"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Hora</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum quos deleniti. Sed quibusdam nam tenetur porro accusamus hic consectetur incidunt cum impedit nesciunt! Similique porro ex eveniet mollitia vero!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://picsum.photos/id/564/1920/800"
+                            class="w-100 d-block"
+                            alt="Druhý slide"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Údolí</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum quos deleniti. Sed quibusdam nam tenetur porro accusamus.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://picsum.photos/id/1040/1920/800"
+                            class="w-100 d-block"
+                            alt="Třetí slide"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Hrad</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum quos deleniti. Sed quibusdam nam tenetur porro accusamus hic consectetur incidunt cum impedit nesciunt!</p>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-------------------- SECTION - TARIFY -------------------->
+        <section id="tarify" class="container mt-5">
+            <div class="row justify-content-center mx-auto">
+                <div class="col-md-10 col-lg-4 mt-4 order-2 order-lg-1">
+                    <!-- bs5-card-head-foot -->
+                    <div class="card">
+                        <div class="card-header">Tarif-1</div>
+                        <div class="card-body">
+                            <h4 class="card-title">499&nbsp;Kč</h4>
+                            <p class="card-text">Měsíčně</p>
+                            <hr>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore rem quae ipsum amet earum doloremque qui error</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button 
+                                class="btn btn-outline-primary btn-sm w-100" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalId">
+                                Objednat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-lg-4 mt-3 mt-lg-0 order-1 order-lg-2">
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary text-light">Tarif-2</div>
+                        <div class="card-body">
+                            <h4 class="card-title">990&nbsp;Kč</h4>
+                            <p class="card-text lead">Měsíčně</p>
+                            <hr>
+                            <p class="card-text lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore rem quae ipsum amet earum doloremque qui error Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, officiis?</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button 
+                                class="btn btn-primary btn-lg w-100"                                
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalId">
+                                Objednat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-lg-4 mt-4 order-3">
+                    <div class="card">
+                        <div class="card-header">Tarif-3</div>
+                        <div class="card-body">
+                            <h4 class="card-title">1990&nbsp;Kč</h4>
+                            <p class="card-text">Měsíčně</p>
+                            <hr>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore rem quae ipsum amet earum doloremque qui error</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <button 
+                                class="btn btn-outline-primary btn-sm w-100" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalId">
+                                Objednat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------------------- SECTION - FAQ -------------------->
+        <section id="faq" class="mt-5 bg-light">
+            <div class="container py-4">
+                <h2 class="display-4 text-center my-3">Často kladené dotazy</h2>
+                <div class="card mb-3">
+                    <div class="card-header btn text-start" data-bs-toggle="collapse" href="#faq1">
+                        Jaká je minimální cena?
+                    </div>
+                    <div class="card-body collapse" id="faq1">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aspernatur voluptate recusandae libero quod, earum ut illum reprehenderit blanditiis quidem officiis! Dolor repellendus adipisci optio sunt, odio minima est distinctio!</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header btn text-start" data-bs-toggle="collapse" href="#faq2">
+                        Dá se to objednat na firmu?
+                    </div>
+                    <div class="card-body collapse" id="faq2">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aspernatur voluptate recusandae libero quod, earum ut illum reprehenderit blanditiis quidem officiis! Dolor repellendus adipisci optio sunt, odio minima est distinctio!</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header btn text-start" data-bs-toggle="collapse" href="#faq3">
+                        Byla by sleva pro studenty?
+                    </div>
+                    <div class="card-body collapse" id="faq3">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aspernatur voluptate recusandae libero quod, earum ut illum reprehenderit blanditiis quidem officiis! Dolor repellendus adipisci optio sunt, odio minima est distinctio!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-------------------- FOOTER -------------------->
+    <footer class="bg-secondary py-3">
+        <div class="container text-center text-light">WebDev, rychlé weby, které zaujmou Vaše zákazníky ...</div>
+    </footer>
+
+
+    <!-------------------- MODAL BODY -------------------->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Objednávka</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Objednat zvolený tarif ...</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+                    <button type="button" class="btn btn-primary">Uložit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
