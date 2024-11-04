@@ -1,6 +1,6 @@
 ## Bootstrap Project 
 • Learning how to work with Bootstrap <br>
-• Responsive Design 
+• Responsive Design
 
 ## Screenshots 📱
 <img src="img/1-bootstrap-project.png" width="350"> <img src="img/2-bootstrap-project.png" width="350">
